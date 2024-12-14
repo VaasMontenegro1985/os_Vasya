@@ -5,15 +5,15 @@
 #include <unistd.h> 
 #include <sys/types.h> 
 #include <sys/wait.h> 
- 
+
 int main () { 
     char filename[30]; 
     printf("Input filename: "); 
     scanf("%s", filename); 
- 
+
     int pipe1[2];   
     int pipe2[2];  
- 
+
     if (pipe(pipe1) == -1 || pipe(pipe2) == -1) { 
         perror("pipe"); 
         exit(EXIT_FAILURE); 

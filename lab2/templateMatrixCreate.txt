@@ -1,0 +1,7 @@
+{
+    let s = "3\n2048\n2048\n";
+    for (let i = 0; i < 2048*2048; i++) {
+        s += (Math.random() * 1000).toFixed(2) + "\n";
+    }
+    console.log(s);
+}

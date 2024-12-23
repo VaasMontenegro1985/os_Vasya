@@ -80,6 +80,7 @@ int main(int argc, char const *argv[]) {
     if (argc < 2) return 1; 
  
     int hardwareThreads = std::thread::hardware_concurrency(); 
+    std::cout << hardwareThreads << std::endl;
     int maxThreads = std::min(atoi(argv[1]), hardwareThreads); 
 
     int k, rows, cols; 

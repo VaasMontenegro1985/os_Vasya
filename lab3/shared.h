@@ -9,7 +9,7 @@
 typedef struct { 
     int number; 
     char filename[FILENAME_SIZE]; 
-    int sequenceNumber; 
+    int version; 
     int errorCode; 
     pthread_mutex_t mutex; 
 } SharedData;

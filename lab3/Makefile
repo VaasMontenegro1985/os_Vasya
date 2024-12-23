@@ -1,4 +1,4 @@
-all: rm_last_out build run
+all: rm_last_out build run 
 
 run: 
 	./main.out 
